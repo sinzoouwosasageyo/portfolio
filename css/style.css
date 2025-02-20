@@ -1,0 +1,348 @@
+body {
+  font-family: "Pretendard-Regular";
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+header #gnb {
+  float: right;
+  margin: 20px 40px;
+}
+header #gnb ul {
+  display: flex;
+  gap: 40px;
+}
+header #gnb ul li {
+  cursor: pointer;
+  font-size: 0.89rem;
+  color: #666;
+}
+header #gnb ul li.active {
+  color: #000;
+  font-weight: bold;
+}
+
+main {
+  height: 100vh;
+  overflow: hidden;
+}
+main .container .area {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+main .container #main {
+  background: #fff;
+}
+main .container #main #name {
+  float: left;
+  margin: 20px 40px;
+  font-weight: 400;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 72%;
+  left: 0%;
+  line-height: 1.2;
+}
+main .container #main #name span {
+  font-size: 1rem;
+  font-weight: 300;
+}
+main .container #main #name::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #666;
+  position: absolute;
+  bottom: -15%;
+  left: 0;
+}
+main .container #main #title {
+  width: 100%;
+  height: calc(100% - 7rem);
+  font-size: 7rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -5px;
+}
+main .container #main #title span {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 55px;
+  letter-spacing: 0px;
+}
+main .container #about {
+  background: #fff;
+}
+main .container #about .inner {
+  width: 90%;
+  height: calc(100% - 56px);
+  padding-top: 56px;
+  margin: 0 auto;
+}
+main .container #about .inner h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+main .container #about .inner h2::before {
+  content: "";
+  width: 100vw;
+  height: 1px;
+  background: #999;
+  position: absolute;
+  top: 13%;
+  left: 0;
+}
+main .container #about .inner h2::after {
+  content: "";
+  width: 100vw;
+  height: 1px;
+  background: #999;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+}
+main .container #about .inner .profile {
+  display: flex;
+}
+main .container #about .inner .profile li {
+  width: 50%;
+  margin-top: 20px;
+}
+main .container #about .inner .profile #photo {
+  padding: 3%;
+}
+main .container #about .inner .profile #photo #depth_1 {
+  border: 1px solid #999;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1%;
+}
+main .container #about .inner .profile #photo #depth_1 li:first-child {
+  width: 60%;
+}
+main .container #about .inner .profile #photo #depth_1 li:first-child img {
+  width: 100%;
+}
+main .container #about .inner .profile #photo #depth_1 li:last-child {
+  width: 100%;
+}
+main .container #about .inner .profile #photo #depth_1 li:last-child #depth_2 li:first-child {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 20% 0 15%;
+  letter-spacing: 1px;
+}
+main .container #about .inner .profile #photo #depth_1 li:last-child #depth_2 li {
+  margin: 2% 0;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+main .container #about .inner .profile #info {
+  padding: 3%;
+}
+main .container #about .inner .profile #info #depth_1 {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .container #about .inner .profile #info #depth_1 li:first-child {
+  width: 100%;
+}
+main .container #about .inner .profile #info #depth_1 li:first-child span {
+  font-size: 1.2rem;
+  font-weight: 800;
+  width: 100%;
+}
+main .container #about .inner .profile #info #depth_1 li:first-child #depth_2 {
+  margin-top: 2%;
+}
+main .container #about .inner .profile #info #depth_1 li:first-child #depth_2 li {
+  font-size: 1.1rem;
+  font-weight: 300;
+  width: 100%;
+  margin: 1% 0;
+  color: #333;
+}
+main .container #about .inner .profile #info #depth_1 li:nth-child(2) {
+  width: 100%;
+}
+main .container #about .inner .profile #info #depth_1 li:nth-child(2) span {
+  font-size: 1.2rem;
+  font-weight: 800;
+  width: 100%;
+}
+main .container #about .inner .profile #info #depth_1 li:nth-child(2) #depth_2 {
+  margin-top: 2%;
+}
+main .container #about .inner .profile #info #depth_1 li:nth-child(2) #depth_2 li {
+  font-size: 1.1rem;
+  font-weight: 300;
+  width: 100%;
+  margin: 1% 0;
+  color: #333;
+}
+main .container #about .inner .profile #info #depth_1 li:last-child {
+  width: 100%;
+}
+main .container #about .inner .profile #info #depth_1 li:last-child span {
+  font-size: 1.2rem;
+  font-weight: 800;
+  width: 100%;
+}
+main .container #about .inner .profile #info #depth_1 li:last-child #depth_2 {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+main .container #about .inner .profile #info #depth_1 li:last-child #depth_2 li {
+  width: 8%;
+  height: 8%;
+}
+main .container #about .inner .profile #info #depth_1 li:last-child #depth_2 li img {
+  width: 100%;
+}
+main .container #works {
+  background: #fff;
+}
+main .container #works .inner {
+  width: 90%;
+  height: calc(100% - 56px);
+  padding-top: 56px;
+  margin: 0 auto;
+}
+main .container #works .inner .list {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+main .container #works .inner .list .item {
+  width: calc((100% - 80px) / 3);
+}
+main .container #works .inner .list .item .box {
+  background: #fff;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+main .container #works .inner .list .item .box .img img {
+  width: 50%;
+}
+main .container #works .inner .list .item .box h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 20px 0 0 40px;
+}
+main .container #works .inner .list .item .box .desc {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding-left: 40px;
+  margin: 20px 0 40px;
+  color: #333;
+}
+main .container #works .inner .list .item .box .link {
+  display: flex;
+  gap: 2 0px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+main .container #works .inner .list .item .box .link li a {
+  display: block;
+  border-radius: 3px;
+  border: 1px solid #999;
+  padding: 11px 20px 13px;
+  color: #111;
+  text-decoration: none;
+  margin-right: 5px;
+  transition: all 0.2s ease-in-out;
+}
+main .container #works .inner .list .item .box .link li a:hover {
+  background: #999;
+  color: #fff;
+}
+main .container #works .inner .list .item .box .link li.git a {
+  padding: 4px 4px;
+}
+main .container #contact {
+  background: #fff;
+}
+@keyframes move {
+  to {
+    bottom: 24px;
+  }
+}
+main .mouse {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  animation: move 0.4s alternate infinite;
+}
+main .pager {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+main .pager span {
+  display: block;
+  margin: 8px 0;
+  width: 8px;
+  height: 8px;
+  background: #000;
+  border-radius: 50%;
+  opacity: 0.4;
+  cursor: pointer;
+}
+main .pager span.active {
+  opacity: 1;
+}
+main #modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.7333333333);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+main #modal.active {
+  display: flex;
+}
+main #modal .modal_inner {
+  width: 80%;
+  height: 84%;
+  background: #fff;
+  border: 10px solid #fff;
+  border-radius: 12px;
+}
+main #modal iframe {
+  width: 100%;
+  height: 100%;
+}
+main #modal .close_modal {
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

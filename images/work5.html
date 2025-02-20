@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>work5</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0;}
+		img {width: 100%;}
+
+    input {display: none;}
+    label {
+      display: inline-block; width: 10%; font-family: "Noto Sans", serif; font-size: 1.2rem;
+      text-align: center; padding: .2% .5% .4%; background-color: transparent;
+      border-radius: 3px; border: 1px solid #999; margin: 1% auto; transition: all .2s ease-in-out;
+    }
+    label:hover {background: #999; color: #fff;}
+
+    .tab_contents #page_selector div {display: none;}
+
+    #tab1:checked ~ .tab_contents #page1,
+    #tab2:checked ~ .tab_contents #page2,
+    #tab3:checked ~ .tab_contents #page3,
+    #tab4:checked ~ .tab_contents #page4 {display: flex;}
+
+    #tab1:checked+label {background-color: #111; font-weight: bold; color: #fff;}
+    #tab2:checked+label {background-color: #111; font-weight: bold; color: #fff;}
+    #tab3:checked+label {background-color: #111; font-weight: bold; color: #fff;}
+    #tab4:checked+label {background-color: #111; font-weight: bold; color: #fff;}
+
+   
+  </style>
+</head>
+<body>
+  <input id="tab1" type="radio" name="tab_menu" checked>
+  <label for="tab1"><span>Main</span></label>
+  <input id="tab2" type="radio" name="tab_menu">
+  <label for="tab2"><span>News</span></label>
+  <input id="tab3" type="radio" name="tab_menu">
+  <label for="tab3"><span>Discography</span></label>
+  <input id="tab4" type="radio" name="tab_menu">
+  <label for="tab4"><span>Concert</span></label>
+  <div class="tab_contents">
+    <div id="page_selector">
+      <div id="page1">
+        <img src="../images/oasis_main.png" alt="메인">
+      </div>
+      <div id="page2">
+        <img src="../images/oasis_news.png" alt="뉴스">
+      </div>
+      <div id="page3">
+        <img src="../images/oasis_discography.png" alt="디스코그라피">
+      </div>
+      <div id="page4">
+        <img src="../images/oasis_concert.png" alt="콘서트">
+      </div>
+    </div><!--end:#page_selector-->
+  </div><!--end:.tab-contents-->
+</body>
+</html>

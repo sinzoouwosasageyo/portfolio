@@ -1,0 +1,31 @@
+
+@font-face{
+	font-family:"토스폰트";
+	src:
+		local("머니그라피TTF Rounded"), /*시스템폰트 사용*/
+		url("../fonts/Moneygraphy-Rounded.eot") format("embeded-opentype"),
+		/*익스플로어 브라우저용 웹폰트로, 최신 브라우저에서는 무시된다.*/
+		url("../fonts/Moneygraphy-Rounded.woff2") format("woff"),
+		url("../fonts/Moneygraphy-Rounded.woff") format("woff");
+	font-weight:normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Light';
+  src: url('../font/Pretendard/Pretendard-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('../font/Pretendard/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard-Medium';
+  src: url('../font/Pretendard/Pretendard-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url('../font/Pretendard/Pretendard-Bold.woff') format('woff');
+}
