@@ -277,6 +277,70 @@ main .container #works .inner .list .item .box .link li a:hover {
 main .container #works .inner .list .item .box .link li.git a {
   padding: 4px 4px;
 }
+main .container #works .inner .port_title {
+  position: absolute;
+  bottom: 8%;
+  right: 8%;
+}
+main .container #works .inner .port_title::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #999;
+  position: absolute;
+  left: 0;
+  top: -1.5%;
+}
+main .container #works .inner .port_title span {
+  font-size: 3rem;
+  font-weight: 500;
+}
+main .container #contact {
+  width: 90%;
+  height: calc(100% - 56px);
+  padding-top: 56px;
+  margin: 0 auto;
+}
+main .container #contact .inner::before {
+  content: "";
+  width: 20%;
+  height: 1px;
+  background: #999;
+  position: absolute;
+  right: 0%;
+  bottom: 18%;
+}
+main .container #contact .inner::after {
+  content: "";
+  width: 1px;
+  height: 40%;
+  background: #999;
+  position: absolute;
+  right: 7%;
+  bottom: 12.2%;
+}
+main .container #contact .inner h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+main .container #contact .inner h2::before {
+  content: "";
+  width: 20%;
+  height: 1px;
+  background: #999;
+  position: absolute;
+  left: 0%;
+  top: 12%;
+}
+main .container #contact .inner h2::after {
+  content: "";
+  width: 1px;
+  height: 40%;
+  background: #999;
+  position: absolute;
+  left: 13.3%;
+  top: 6.4%;
+}
 main .container #contact {
   background: #fff;
 }
