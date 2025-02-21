@@ -186,6 +186,25 @@ main {
 						position: absolute; left: 13.3%; top: 6.4%;
 					}
 				}
+				.contact_area {
+					display: flex; justify-content: center; align-items: center;
+					li {width: 35%; margin-top: 5%;}
+					li:first-child {margin-left: 10%;}
+					#comment {
+						p {
+							margin: 6% 0; line-height: 1.2; font-weight: 400;
+							span {font-weight: 700;}
+						}
+						p:first-child {
+							font-size: 2rem;
+						}
+						p:last-child {font-size: 1.2rem; color: #666;}
+						img {width: 4%; vertical-align: -5px;}	
+					}
+					#bonus_photo {
+						img {width: 60%;}
+					}
+				}
 			}
 		}
 		#contact {background: #fff;}

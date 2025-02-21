@@ -341,6 +341,40 @@ main .container #contact .inner h2::after {
   left: 13.3%;
   top: 6.4%;
 }
+main .container #contact .inner .contact_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container #contact .inner .contact_area li {
+  width: 35%;
+  margin-top: 5%;
+}
+main .container #contact .inner .contact_area li:first-child {
+  margin-left: 10%;
+}
+main .container #contact .inner .contact_area #comment p {
+  margin: 6% 0;
+  line-height: 1.2;
+  font-weight: 400;
+}
+main .container #contact .inner .contact_area #comment p span {
+  font-weight: 700;
+}
+main .container #contact .inner .contact_area #comment p:first-child {
+  font-size: 2rem;
+}
+main .container #contact .inner .contact_area #comment p:last-child {
+  font-size: 1.2rem;
+  color: #666;
+}
+main .container #contact .inner .contact_area #comment img {
+  width: 4%;
+  vertical-align: -5px;
+}
+main .container #contact .inner .contact_area #bonus_photo img {
+  width: 60%;
+}
 main .container #contact {
   background: #fff;
 }
