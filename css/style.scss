@@ -2,14 +2,14 @@
 body{font-family: "Pretendard-Regular";}
  
 header {
-	position: fixed; width: 100%; z-index: 999; 
-	backdrop-filter: blur(4px);	
+	position: fixed; width: 92%; z-index: 999; 
+	backdrop-filter: blur(4px);	margin: 0 auto;
 	#gnb {
-		float: right; margin: 20px 40px;
+		width: 25%; float: right; margin: 20px 0;
 		ul {
-			display: flex; gap: 40px;
+			display: flex; gap: 40px; justify-content: space-between;
 			li {
-				cursor: pointer; font-size: .89rem; color: #666;
+				cursor: pointer; font-size: 1.2rem; color: #666;
 				&.active {color: #000; font-weight: bold;}
 			}
 		}
@@ -18,17 +18,17 @@ header {
 
 main {
 	height: 100vh; overflow: hidden;
-
 	.container {
 		.area {width: 100%; height: 100vh; position: relative;}
 		#main {
 			background:#fff;
+			width: 90%; height: calc(100% - 56px); padding-top: 56px; margin: 0 auto;
 			#name {
-				float: left; margin: 20px 40px; font-weight: 400; font-size: 1.3rem;
+				float: left; margin: 20px 0; font-weight: 400; font-size: 1.3rem;
 				position: absolute; top: 72%; left: 0%; line-height: 1.2;
 				span {font-size: 1rem; font-weight: 300;}
 				&::after {
-					content: ""; width: 100%; height: 1px; background: #666;
+					content: ""; width: 42%; height: 1px; background: #666;
 					position: absolute; bottom: -15%; left: 0;
 				}
 			}
@@ -48,30 +48,31 @@ main {
 						content: ""; width: 100vw; height: 1px; background: #999;
 						position: absolute; top: 13%; left: 0;
 					}
-					&::after {
-						content: ""; width: 100vw; height: 1px; background: #999;
-						position: absolute; bottom: 10%; left: 0;
-					}
+					// &::after {
+					// 	content: ""; width: 100vw; height: 1px; background: #999;
+					// 	position: absolute; bottom: 10%; left: 0;
+					// }
 				}
 				.profile {
 					display: flex;
-					li {width: 50%; margin-top: 20px;}
+					li {width: 50%; margin-top: 9px;}
 					#photo {
 						padding: 3%;
 						#depth_1 { border: 1px solid #999;
-							width: 50%; margin: 0 auto; display: flex; flex-direction: column;
-							justify-content: center; align-items: flex-start; padding: 1%;
+							width: 65%; margin: 0 auto; display: flex; flex-direction: column;
+							justify-content: center; align-items: flex-start; padding: 3% 1%;
 							li:first-child {
-								width: 60%;
+								width: 60%; margin: 0 auto;
 								img {width: 100%;}
 							}
 							li:last-child {
 								width: 100%;
 								#depth_2 {
+									width: 50%; margin: 0 auto;
 									li:first-child {
-										font-size: 1.4rem; font-weight: 500; margin: 20% 0 15%; letter-spacing: 1px;
+										font-size: 1.4rem; font-weight: 600; margin: 20% 0 15% -5%; letter-spacing: 1px;
 									}
-									li {margin: 2% 0; font-weight: 300; font-size: 1.1rem;}
+									li {width: 100%; margin: 2% 0 0 -5%; font-weight: 400; font-size: 1.1rem;}
 								}
 							}
 						}
@@ -87,27 +88,29 @@ main {
 							justify-content: space-between;
 							li:first-child {
 								width: 100%;
-								span {font-size: 1.2rem; font-weight: 800; width: 100%;}
+								span {font-size: 1.5rem; font-weight: 900; width: 100%; line-height: 2.2;}
 								#depth_2 {
 									margin-top: 2%;
 									li {
-										font-size: 1.1rem; font-weight: 300; width: 100%; margin: 1% 0; color: #333;
+										font-size: 1.1rem; font-weight: 500; width: 100%; margin: 1% 0; color: #333;
+										line-height: 1.4;
 									}
 								}
 							}
 							li:nth-child(2) {
 								width: 100%;
-								span {font-size: 1.2rem; font-weight: 800; width: 100%;}
+								span {font-size: 1.5rem; font-weight: 900; width: 100%; line-height: 2.2;}
 								#depth_2 {
 									margin-top: 2%;
 									li {
-										font-size: 1.1rem; font-weight: 300; width: 100%; margin: 1% 0; color: #333;
+										font-size: 1.1rem; font-weight: 500; width: 100%; margin: 1% 0; color: #333;
+										line-height: 1.4;
 									}
 								}
 							}
 							li:last-child {
 								width: 100%;
-								span {font-size: 1.2rem; font-weight: 800; width: 100%;}
+								span {font-size: 1.5rem; font-weight: 900; width: 100%;}
 								#depth_2 {
 									width: 100%; display: flex; gap: 5px;
 									li {
