@@ -127,7 +127,7 @@ main {
 		#works {
 			background: #fff;
 			.inner {
-				width: 90%; height: calc(100% - 56px); padding-top: 56px; margin: 0 auto;
+				width: 90%; height: calc(100% - 56px); padding-top: 16px; margin: 0 auto;
 				.list {
 					display: flex; gap: 40px; flex-wrap: wrap;
 					.item {
@@ -139,7 +139,7 @@ main {
 							}
 							h3 {font-size: 1.5rem; font-weight: 600; padding: 20px 0 0 40px;}
 							.desc {
-								font-size: 1.2rem; font-weight: 300; padding-left: 40px; margin: 20px 0 40px;
+								font-size: 1.2rem; font-weight: 300; padding-left: 40px; margin: 20px 0 30px;
 								color: #333;
 							}
 							.link {

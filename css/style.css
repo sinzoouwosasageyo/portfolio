@@ -230,7 +230,7 @@ main .container #works {
 main .container #works .inner {
   width: 90%;
   height: calc(100% - 56px);
-  padding-top: 56px;
+  padding-top: 16px;
   margin: 0 auto;
 }
 main .container #works .inner .list {
@@ -259,7 +259,7 @@ main .container #works .inner .list .item .box .desc {
   font-size: 1.2rem;
   font-weight: 300;
   padding-left: 40px;
-  margin: 20px 0 40px;
+  margin: 20px 0 30px;
   color: #333;
 }
 main .container #works .inner .list .item .box .link {
