@@ -439,9 +439,9 @@ main {
 			#about {
 				.inner {
 					padding-top: 1%;
-					h2 {font-size: 2rem; margin-top: 5%;}
+					h2 {font-size: 2rem; margin-top: 0%;}
 					.profile {
-						flex-wrap: wrap; margin-top: 10%;
+						flex-wrap: wrap; margin-top: 0;
 						#photo {
 							width: 100%; padding: 0;
 							#depth_1 {
@@ -449,7 +449,7 @@ main {
 								li {margin: 0;}
 								li:first-child {width: 40%;}
 								li:last-child {
-									width: 60%; padding: 10% 2%;
+									width: 60%; padding: 5% 2%;
 									#depth_2 {
 										margin: auto 0; width: 100%;
 										li:first-child {padding: 0 0 8% 0; margin: 0;}
@@ -463,21 +463,21 @@ main {
 							margin-top: 0; width: 100%; padding: 3% 3% 0 0;
 							#depth_1 {
 								li:first-child {
-									margin-top: 10%;
+									margin-top: 0%;
 									span {font-size: 1.1rem;}
 									#depth_2 {
 										li {font-size: .8rem;}
 									}
 								}
 								li:nth-child(2) {
-									margin-top: 10%;
+									margin-top: 0%;
 									span {font-size: 1.1rem;}
 									#depth_2 {
 										li {font-size: .8rem;}
 									}
 								}
 								li:last-child {
-									margin-top: 10%;
+									margin-top: 3%;
 									span {font-size: 1.1rem;}
 									#depth_2 {
 										li:nth-child(2) {margin-top: 5%;}
@@ -491,8 +491,9 @@ main {
 			}
 			#works {
 				.inner {
+					padding-top: 0%;
 					.list {
-						flex-direction: column; height: 100%;
+						flex-direction: column; gap: 15px;
 						.item {
 							width: 100%;
 							.box {
@@ -510,11 +511,13 @@ main {
 				}
 			}
 			#contact {
+				padding-top: 0%;
 				.inner {
+					padding-top: 0%;
 					h2 {text-align: center;}
 					.contact_area {
 						#comment {
-							margin-top: 10%;
+							margin-top: 5%;
 							p:first-child {font-size: 1.9rem;}
 							p:last-child {
 								margin-top: 10%; font-size: 1.5rem;

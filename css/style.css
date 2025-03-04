@@ -659,11 +659,11 @@ main #modal .close_modal {
   }
   main .container #about .inner h2 {
     font-size: 2rem;
-    margin-top: 5%;
+    margin-top: 0%;
   }
   main .container #about .inner .profile {
     flex-wrap: wrap;
-    margin-top: 10%;
+    margin-top: 0;
   }
   main .container #about .inner .profile #photo {
     width: 100%;
@@ -681,7 +681,7 @@ main #modal .close_modal {
   }
   main .container #about .inner .profile #photo #depth_1 li:last-child {
     width: 60%;
-    padding: 10% 2%;
+    padding: 5% 2%;
   }
   main .container #about .inner .profile #photo #depth_1 li:last-child #depth_2 {
     margin: auto 0;
@@ -703,7 +703,7 @@ main #modal .close_modal {
     padding: 3% 3% 0 0;
   }
   main .container #about .inner .profile #info #depth_1 li:first-child {
-    margin-top: 10%;
+    margin-top: 0%;
   }
   main .container #about .inner .profile #info #depth_1 li:first-child span {
     font-size: 1.1rem;
@@ -712,7 +712,7 @@ main #modal .close_modal {
     font-size: 0.8rem;
   }
   main .container #about .inner .profile #info #depth_1 li:nth-child(2) {
-    margin-top: 10%;
+    margin-top: 0%;
   }
   main .container #about .inner .profile #info #depth_1 li:nth-child(2) span {
     font-size: 1.1rem;
@@ -721,7 +721,7 @@ main #modal .close_modal {
     font-size: 0.8rem;
   }
   main .container #about .inner .profile #info #depth_1 li:last-child {
-    margin-top: 10%;
+    margin-top: 3%;
   }
   main .container #about .inner .profile #info #depth_1 li:last-child span {
     font-size: 1.1rem;
@@ -732,9 +732,12 @@ main #modal .close_modal {
   main .container #about .inner .profile #info #depth_1 li:last-child #depth_2 li:last-child {
     margin-top: 5%;
   }
+  main .container #works .inner {
+    padding-top: 0%;
+  }
   main .container #works .inner .list {
     flex-direction: column;
-    height: 100%;
+    gap: 15px;
   }
   main .container #works .inner .list .item {
     width: 100%;
@@ -760,11 +763,17 @@ main #modal .close_modal {
   main .container #works .inner .port_title {
     display: none;
   }
+  main .container #contact {
+    padding-top: 0%;
+  }
+  main .container #contact .inner {
+    padding-top: 0%;
+  }
   main .container #contact .inner h2 {
     text-align: center;
   }
   main .container #contact .inner .contact_area #comment {
-    margin-top: 10%;
+    margin-top: 5%;
   }
   main .container #contact .inner .contact_area #comment p:first-child {
     font-size: 1.9rem;
