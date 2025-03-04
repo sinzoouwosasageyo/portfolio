@@ -6,6 +6,8 @@ header {
   position: fixed;
   width: 92%;
   z-index: 999;
+  top: 0%;
+  right: 8%;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   margin: 0 auto;
@@ -17,7 +19,7 @@ header #gnb {
 }
 header #gnb ul {
   display: flex;
-  gap: 40px;
+  gap: 5%;
   justify-content: space-between;
 }
 header #gnb ul li {
@@ -451,4 +453,335 @@ main #modal .close_modal {
   top: 40px;
   right: 40px;
   cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  main .container #about .inner {
+    padding-top: 0;
+  }
+  main .container #about .inner h2::before {
+    display: none;
+  }
+  main .container #about .inner .profile li {
+    margin-top: 0;
+  }
+  main .container #about .inner .profile #photo #depth_1 {
+    width: 100%;
+  }
+  main .container #about .inner .profile #photo #depth_1 li:first-child {
+    width: 70%;
+  }
+  main .container #about .inner .profile #photo #depth_1 li:last-child #depth_2 {
+    width: 60%;
+  }
+  main .container #about .inner .profile #info #depth_1 {
+    width: 100%;
+  }
+  main .container #works .inner .list .item .box h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px 0 0 10px;
+  }
+  main .container #works .inner .list .item .box .desc {
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding-left: 10px;
+    margin: 20px 0 30px;
+  }
+  main .container #works .inner .list .item .box .link {
+    padding-left: 10px;
+  }
+  main .container #works .inner .list .item .box .link li a {
+    font-size: 0.9rem;
+    padding: 7px 10px 9px;
+  }
+  main .container #works .inner .list .item .box .link li.git a {
+    padding: 0.8px 0.8px;
+  }
+  main .container #contact .inner::before {
+    display: none;
+  }
+  main .container #contact .inner::after {
+    display: none;
+  }
+  main .container #contact .inner h2::before {
+    display: none;
+  }
+  main .container #contact .inner h2::after {
+    display: none;
+  }
+  main .container #contact .inner .contact_area li {
+    width: 45%;
+  }
+  main .container #contact .inner .contact_area #comment p:first-child {
+    font-size: 1.8rem;
+  }
+  main .container #contact .inner .contact_area #comment img {
+    width: 4%;
+    vertical-align: -1px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+  header #gnb {
+    float: none;
+    margin: 3% auto;
+  }
+  header #gnb ul {
+    gap: 15%;
+  }
+  main .container #about .inner {
+    padding-top: 10%;
+  }
+  main .container #about .inner h2::before {
+    display: none;
+  }
+  main .container #about .inner .profile li {
+    margin-top: 5%;
+  }
+  main .container #about .inner .profile #photo {
+    width: 40%;
+  }
+  main .container #about .inner .profile #photo #depth_1 {
+    width: 100%;
+    padding-top: 10%;
+  }
+  main .container #about .inner .profile #photo #depth_1 li:first-child {
+    width: 85%;
+  }
+  main .container #about .inner .profile #photo #depth_1 li:last-child #depth_2 {
+    width: 75%;
+  }
+  main .container #about .inner .profile #photo #depth_1 li:last-child #depth_2 li:first-child {
+    font-size: 1.2rem;
+  }
+  main .container #about .inner .profile #photo #depth_1 li:last-child #depth_2 li {
+    font-size: 0.9rem;
+  }
+  main .container #about .inner .profile #info {
+    width: 60%;
+  }
+  main .container #about .inner .profile #info #depth_1 {
+    width: 100%;
+  }
+  main .container #about .inner .profile #info #depth_1 li:first-child {
+    margin-top: 3%;
+  }
+  main .container #about .inner .profile #info #depth_1 li:first-child #depth_2 li {
+    font-size: 1rem;
+  }
+  main .container #about .inner .profile #info #depth_1 li:last-child #depth_2 li:first-child {
+    margin-top: 5%;
+  }
+  main .container #works .inner {
+    padding-top: 10%;
+  }
+  main .container #works .inner .list .item .box h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px 0 0 10px;
+  }
+  main .container #works .inner .list .item .box .desc {
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-left: 10px;
+    margin: 20px 0 30px;
+  }
+  main .container #works .inner .list .item .box .link {
+    padding-left: 10px;
+    flex-wrap: wrap;
+  }
+  main .container #works .inner .list .item .box .link li a {
+    font-size: 0.9rem;
+    padding: 7px 10px 9px;
+    margin-bottom: 6%;
+  }
+  main .container #works .inner .list .item .box .link li.git a {
+    padding: 0.8px 0.8px;
+  }
+  main .container #works .inner .port_title {
+    bottom: 20%;
+  }
+  main .container #contact .inner {
+    padding-top: 10%;
+  }
+  main .container #contact .inner .contact_area {
+    flex-wrap: wrap;
+  }
+  main .container #contact .inner .contact_area li:first-child {
+    margin-left: 0%;
+  }
+  main .container #contact .inner .contact_area #comment {
+    width: 70%;
+    text-align: center;
+  }
+  main .container #contact .inner .contact_area #comment p:first-child {
+    font-size: 1.8rem;
+  }
+  main .container #contact .inner .contact_area #comment img {
+    width: 4%;
+    vertical-align: -1px;
+  }
+  main .container #contact .inner .contact_area #bonus_photo {
+    width: 40%;
+  }
+  main .container #contact .inner .contact_area #bonus_photo img {
+    padding-left: 20%;
+  }
+}
+@media (max-width: 360px) {
+  header {
+    width: 100%;
+    right: 0;
+  }
+  header #gnb {
+    float: none;
+    margin: 3% auto;
+    width: 90%;
+  }
+  header #gnb ul {
+    gap: 3%;
+  }
+  main .container #main #title {
+    font-size: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    margin-top: 40%;
+  }
+  main .container #main #title span {
+    margin-top: 5%;
+  }
+  main .container #about .inner {
+    padding-top: 1%;
+  }
+  main .container #about .inner h2 {
+    font-size: 2rem;
+    margin-top: 5%;
+  }
+  main .container #about .inner .profile {
+    flex-wrap: wrap;
+    margin-top: 10%;
+  }
+  main .container #about .inner .profile #photo {
+    width: 100%;
+    padding: 0;
+  }
+  main .container #about .inner .profile #photo #depth_1 {
+    padding: 0;
+    flex-direction: row;
+  }
+  main .container #about .inner .profile #photo #depth_1 li {
+    margin: 0;
+  }
+  main .container #about .inner .profile #photo #depth_1 li:first-child {
+    width: 40%;
+  }
+  main .container #about .inner .profile #photo #depth_1 li:last-child {
+    width: 60%;
+    padding: 10% 2%;
+  }
+  main .container #about .inner .profile #photo #depth_1 li:last-child #depth_2 {
+    margin: auto 0;
+    width: 100%;
+  }
+  main .container #about .inner .profile #photo #depth_1 li:last-child #depth_2 li:first-child {
+    padding: 0 0 8% 0;
+    margin: 0;
+  }
+  main .container #about .inner .profile #photo #depth_1 li:last-child #depth_2 li:last-child {
+    padding: 0;
+  }
+  main .container #about .inner .profile #photo #depth_1 li:last-child #depth_2 li {
+    margin: 3% 0;
+  }
+  main .container #about .inner .profile #info {
+    margin-top: 0;
+    width: 100%;
+    padding: 3% 3% 0 0;
+  }
+  main .container #about .inner .profile #info #depth_1 li:first-child {
+    margin-top: 10%;
+  }
+  main .container #about .inner .profile #info #depth_1 li:first-child span {
+    font-size: 1.1rem;
+  }
+  main .container #about .inner .profile #info #depth_1 li:first-child #depth_2 li {
+    font-size: 0.8rem;
+  }
+  main .container #about .inner .profile #info #depth_1 li:nth-child(2) {
+    margin-top: 10%;
+  }
+  main .container #about .inner .profile #info #depth_1 li:nth-child(2) span {
+    font-size: 1.1rem;
+  }
+  main .container #about .inner .profile #info #depth_1 li:nth-child(2) #depth_2 li {
+    font-size: 0.8rem;
+  }
+  main .container #about .inner .profile #info #depth_1 li:last-child {
+    margin-top: 10%;
+  }
+  main .container #about .inner .profile #info #depth_1 li:last-child span {
+    font-size: 1.1rem;
+  }
+  main .container #about .inner .profile #info #depth_1 li:last-child #depth_2 li:nth-child(2) {
+    margin-top: 5%;
+  }
+  main .container #about .inner .profile #info #depth_1 li:last-child #depth_2 li:last-child {
+    margin-top: 5%;
+  }
+  main .container #works .inner .list {
+    flex-direction: column;
+    height: 100%;
+  }
+  main .container #works .inner .list .item {
+    width: 100%;
+  }
+  main .container #works .inner .list .item .box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .container #works .inner .list .item .box .img {
+    display: none;
+  }
+  main .container #works .inner .list .item .box h3 {
+    width: 100%;
+  }
+  main .container #works .inner .list .item .box .desc {
+    font-size: 0.9rem !important;
+    margin: 3% 0 0 0;
+  }
+  main .container #works .inner .list .item .box .link {
+    margin: 3% 0 0 3%;
+    padding: 0;
+  }
+  main .container #works .inner .port_title {
+    display: none;
+  }
+  main .container #contact .inner h2 {
+    text-align: center;
+  }
+  main .container #contact .inner .contact_area #comment {
+    margin-top: 10%;
+  }
+  main .container #contact .inner .contact_area #comment p:first-child {
+    font-size: 1.9rem;
+  }
+  main .container #contact .inner .contact_area #comment p:last-child {
+    margin-top: 10%;
+    font-size: 1.5rem;
+  }
+  main .container #contact .inner .contact_area #comment p:last-child a img {
+    width: 8%;
+  }
+  main .container #contact .inner .contact_area #bonus_photo {
+    width: 50%;
+    margin-top: 10%;
+  }
+  main .container #contact .inner .contact_area #bonus_photo img {
+    width: 100%;
+    padding: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

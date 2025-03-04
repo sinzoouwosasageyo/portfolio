@@ -2,12 +2,12 @@
 body{font-family: "Pretendard-Regular";}
  
 header {
-	position: fixed; width: 92%; z-index: 999; 
+	position: fixed; width: 92%; z-index: 999; top: 0%; right: 8%;
 	backdrop-filter: blur(4px);	margin: 0 auto;
 	#gnb {
 		width: 25%; float: right; margin: 20px 0;
 		ul {
-			display: flex; gap: 40px; justify-content: space-between;
+			display: flex; gap: 5%; justify-content: space-between;
 			li {
 				cursor: pointer; font-size: 1.2rem; color: #666;
 				&.active {color: #000; font-weight: bold;}
@@ -244,4 +244,292 @@ main {
 			cursor: pointer;
 		}
 	}//end:#modal
+}
+
+@media (max-width: 1024px){
+	main {
+		.container {
+			#about {
+				.inner {
+					padding-top: 0;
+					h2::before {display: none;}
+					.profile {
+						li {margin-top: 0;}
+						#photo {
+							#depth_1 {
+								width: 100%;
+								li:first-child {
+									width: 70%;
+								}
+								li:last-child {
+									#depth_2 {
+										width: 60%;
+									}
+								}
+							}
+						}
+						#info {
+							#depth_1 {
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+			#works {
+				.inner {
+					.list {
+						.item {
+							.box {
+								h3 {font-size: 1.2rem; font-weight: 600; padding: 10px 0 0 10px;}
+								.desc {font-size: .9rem; font-weight: 300; padding-left: 10px; margin: 20px 0 30px;}
+								.link {
+									padding-left: 10px;
+									li {
+										a {
+											font-size: .9rem; padding: 7px 10px 9px;
+										}
+										&.git a {padding: .8px .8px;}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			#contact {
+				.inner {
+					&::before {display: none;}
+					&::after {display: none;}
+					h2 {
+						&::before {display: none;}
+						&::after {display: none;}
+					}
+					.contact_area {
+						li {width: 45%;}
+						#comment {
+							p:first-child {font-size: 1.8rem;}
+							img {width: 4%; vertical-align: -1px;}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px){
+	header {
+		width: 100%;
+		#gnb {
+			float: none; margin: 3% auto;
+			ul {
+				gap: 15%;
+			}
+		}
+	}
+	main {
+		.container {
+			#about {
+				.inner {
+					padding-top: 10%;
+					h2::before {display: none;}
+					.profile {
+						li {margin-top: 5%;}
+						#photo {
+							width: 40%;
+							#depth_1 {
+								width: 100%; padding-top: 10%;
+								li:first-child {
+									width: 85%;
+								}
+								li:last-child {
+									#depth_2 {
+										width: 75%;
+										li:first-child {font-size: 1.2rem;}
+										li {font-size: .9rem;}
+									}
+								}
+							}
+						}
+						#info {
+							width: 60%;
+							#depth_1 {
+								width: 100%;
+								li:first-child {
+									margin-top: 3%;
+									#depth_2 {
+										li {font-size: 1rem;}
+									}
+								}
+								li:last-child {
+									#depth_2 {
+										li:first-child {margin-top: 5%;}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			#works {
+				.inner {
+					padding-top: 10%;
+					.list {
+						.item {
+							.box {
+								h3 {font-size: 1.2rem; font-weight: 600; padding: 10px 0 0 10px;}
+								.desc {font-size: 1.2rem; font-weight: 300; padding-left: 10px; margin: 20px 0 30px;}
+								.link {
+									padding-left: 10px; flex-wrap: wrap;
+									li {
+										a {
+											font-size: .9rem; padding: 7px 10px 9px; margin-bottom: 6%;
+										}
+										&.git a {padding: .8px .8px;}
+									}
+								}
+							}
+						}
+					}
+					.port_title {bottom: 20%;}
+				}
+			}
+			#contact {
+				.inner {
+					padding-top: 10%;
+					.contact_area {
+						flex-wrap: wrap;
+						li:first-child {margin-left: 0%;}
+						#comment {
+							width: 70%; text-align: center;
+							p:first-child {font-size: 1.8rem;}
+							img {width: 4%; vertical-align: -1px;}
+						}
+						#bonus_photo {
+							width: 40%;
+							img {padding-left: 20%;}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 360px) {
+	header {
+		width: 100%; right: 0;
+		#gnb {
+			float: none; margin: 3% auto; width: 90%;
+			ul {
+				gap: 3%;
+			}
+		}
+	}
+	main {
+		.container {
+			#main {				
+				#title {
+					font-size: 3.5rem; display: flex; flex-direction: column; height: 20%;
+					margin-top: 40%;
+					span {margin-top: 5%;}
+				}
+			}
+			#about {
+				.inner {
+					padding-top: 1%;
+					h2 {font-size: 2rem; margin-top: 5%;}
+					.profile {
+						flex-wrap: wrap; margin-top: 10%;
+						#photo {
+							width: 100%; padding: 0;
+							#depth_1 {
+								padding: 0; flex-direction: row;
+								li {margin: 0;}
+								li:first-child {width: 40%;}
+								li:last-child {
+									width: 60%; padding: 10% 2%;
+									#depth_2 {
+										margin: auto 0; width: 100%;
+										li:first-child {padding: 0 0 8% 0; margin: 0;}
+										li:last-child {padding: 0;}
+										li {margin: 3% 0;}
+									}
+								}
+							}
+						}
+						#info {
+							margin-top: 0; width: 100%; padding: 3% 3% 0 0;
+							#depth_1 {
+								li:first-child {
+									margin-top: 10%;
+									span {font-size: 1.1rem;}
+									#depth_2 {
+										li {font-size: .8rem;}
+									}
+								}
+								li:nth-child(2) {
+									margin-top: 10%;
+									span {font-size: 1.1rem;}
+									#depth_2 {
+										li {font-size: .8rem;}
+									}
+								}
+								li:last-child {
+									margin-top: 10%;
+									span {font-size: 1.1rem;}
+									#depth_2 {
+										li:nth-child(2) {margin-top: 5%;}
+										li:last-child {margin-top: 5%;}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			#works {
+				.inner {
+					.list {
+						flex-direction: column; height: 100%;
+						.item {
+							width: 100%;
+							.box {
+								display: flex; flex-wrap: wrap;
+								.img {display: none;}
+								h3 {width: 100%;}
+								.desc {font-size: .9rem !important; margin: 3% 0 0 0;}
+								.link {
+									margin: 3% 0 0 3%; padding: 0;
+								}
+							}
+						}
+					}
+					.port_title {display: none;}
+				}
+			}
+			#contact {
+				.inner {
+					h2 {text-align: center;}
+					.contact_area {
+						#comment {
+							margin-top: 10%;
+							p:first-child {font-size: 1.9rem;}
+							p:last-child {
+								margin-top: 10%; font-size: 1.5rem;
+								a {
+									img {width: 8%;}
+								}
+							}
+						}
+						#bonus_photo {
+							width: 50%; margin-top: 10%;
+							img {width: 100%; padding: 0;}
+						}
+					}
+				}
+			}
+		}
+	}
 }
