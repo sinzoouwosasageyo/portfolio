@@ -679,9 +679,12 @@ main #modal .close_modal {
   main .container #about .inner .profile #photo #depth_1 li:first-child {
     width: 40%;
   }
+  main .container #about .inner .profile #photo #depth_1 li:first-child img {
+    width: 80%;
+  }
   main .container #about .inner .profile #photo #depth_1 li:last-child {
     width: 60%;
-    padding: 5% 2%;
+    padding: 5% 2% 5% 0%;
   }
   main .container #about .inner .profile #photo #depth_1 li:last-child #depth_2 {
     margin: auto 0;
@@ -695,7 +698,8 @@ main #modal .close_modal {
     padding: 0;
   }
   main .container #about .inner .profile #photo #depth_1 li:last-child #depth_2 li {
-    margin: 3% 0;
+    margin: 0;
+    margin-top: 0%;
   }
   main .container #about .inner .profile #info {
     margin-top: 0;
@@ -737,7 +741,7 @@ main #modal .close_modal {
   }
   main .container #works .inner .list {
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
   }
   main .container #works .inner .list .item {
     width: 100%;
@@ -760,6 +764,14 @@ main #modal .close_modal {
     margin: 3% 0 0 3%;
     padding: 0;
   }
+  main .container #works .inner .list .item .box .link li a {
+    font-size: 0.9rem;
+    padding: 7px 10px 9px;
+    margin-bottom: 6%;
+  }
+  main .container #works .inner .list .item .box .link li.git a {
+    padding: 0.4px 0.4px;
+  }
   main .container #works .inner .port_title {
     display: none;
   }
@@ -770,6 +782,7 @@ main #modal .close_modal {
     padding-top: 0%;
   }
   main .container #contact .inner h2 {
+    font-size: 2rem;
     text-align: center;
   }
   main .container #contact .inner .contact_area #comment {
@@ -779,7 +792,7 @@ main #modal .close_modal {
     font-size: 1.9rem;
   }
   main .container #contact .inner .contact_area #comment p:last-child {
-    margin-top: 10%;
+    margin-top: 5%;
     font-size: 1.5rem;
   }
   main .container #contact .inner .contact_area #comment p:last-child a img {
@@ -787,7 +800,7 @@ main #modal .close_modal {
   }
   main .container #contact .inner .contact_area #bonus_photo {
     width: 50%;
-    margin-top: 10%;
+    margin-top: 5%;
   }
   main .container #contact .inner .contact_area #bonus_photo img {
     width: 100%;

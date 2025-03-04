@@ -447,14 +447,17 @@ main {
 							#depth_1 {
 								padding: 0; flex-direction: row;
 								li {margin: 0;}
-								li:first-child {width: 40%;}
+								li:first-child {
+									width: 40%;
+									img {width: 80%;}
+								}
 								li:last-child {
-									width: 60%; padding: 5% 2%;
+									width: 60%; padding: 5% 2% 5% 0%;
 									#depth_2 {
 										margin: auto 0; width: 100%;
 										li:first-child {padding: 0 0 8% 0; margin: 0;}
 										li:last-child {padding: 0;}
-										li {margin: 3% 0;}
+										li {margin: 0; margin-top: 0%;}
 									}
 								}
 							}
@@ -493,7 +496,7 @@ main {
 				.inner {
 					padding-top: 0%;
 					.list {
-						flex-direction: column; gap: 15px;
+						flex-direction: column; gap: 10px;
 						.item {
 							width: 100%;
 							.box {
@@ -503,6 +506,12 @@ main {
 								.desc {font-size: .9rem !important; margin: 3% 0 0 0;}
 								.link {
 									margin: 3% 0 0 3%; padding: 0;
+									li {
+										a {
+											font-size: .9rem; padding: 7px 10px 9px; margin-bottom: 6%;
+										}
+										&.git a {padding: .4px .4px;}
+									}
 								}
 							}
 						}
@@ -514,20 +523,20 @@ main {
 				padding-top: 0%;
 				.inner {
 					padding-top: 0%;
-					h2 {text-align: center;}
+					h2 {font-size: 2rem; text-align: center;}
 					.contact_area {
 						#comment {
 							margin-top: 5%;
 							p:first-child {font-size: 1.9rem;}
 							p:last-child {
-								margin-top: 10%; font-size: 1.5rem;
+								margin-top: 5%; font-size: 1.5rem;
 								a {
 									img {width: 8%;}
 								}
 							}
 						}
 						#bonus_photo {
-							width: 50%; margin-top: 10%;
+							width: 50%; margin-top: 5%;
 							img {width: 100%; padding: 0;}
 						}
 					}
