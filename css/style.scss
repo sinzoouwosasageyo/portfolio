@@ -9,8 +9,8 @@ header {
 		ul {
 			display: flex; gap: 5%; justify-content: space-between;
 			li {
-				cursor: pointer; font-size: 1.2rem; color: #666;
-				&.active {color: #000; font-weight: bold;}
+				cursor: pointer; font-size: 1.2rem; color: #666; font-weight: bold;
+				&.active {color: #000;}
 			}
 		}
 	}
@@ -22,20 +22,20 @@ main {
 		.area {width: 100%; height: 100vh; position: relative;}
 		#main {
 			background:#fff;
-			width: 90%; height: calc(100% - 56px); padding-top: 56px; margin: 0 auto;
+			width: 90%; height: calc(100% - 56px); padding-top: 20px; margin: 0 auto;
 			#name {
-				float: left; margin: 20px 0; font-weight: 400; font-size: 1.3rem;
+				float: left; margin: 20px 0; font-weight: 500; font-size: 1.3rem;
 				position: absolute; top: 72%; left: 0%; line-height: 1.2;
-				span {font-size: 1rem; font-weight: 300;}
+				span {font-size: 1rem; font-weight: 500;}
 				&::after {
 					content: ""; width: 42%; height: 1px; background: #666;
 					position: absolute; bottom: -15%; left: 0;
 				}
 			}
 			#title {
-				width: 100%; height: calc(100% - 7rem); font-size: 7rem; font-weight: 500;
+				width: 100%; height: calc(100% - 7rem); font-size: 7rem; font-weight: 700;
 				display: flex; justify-content: center; align-items: center; letter-spacing: -5px;
-				span {font-size: 1rem; font-weight: 400; margin-bottom: 55px; letter-spacing: 0px;}
+				span {font-size: 1rem; font-weight: 600; margin-bottom: 55px; letter-spacing: 0px;}
 			}
 		}
 		#about {
@@ -43,7 +43,7 @@ main {
 			.inner {
 				width: 90%; height: calc(100% - 56px); padding-top: 56px; margin: 0 auto;
 				h2 {
-					font-size: 3rem; font-weight: 500;
+					font-size: 3rem; font-weight: 600;
 					&::before {
 						content: ""; width: 100vw; height: 1px; background: #999;
 						position: absolute; top: 13%; left: 0;
@@ -92,7 +92,7 @@ main {
 								#depth_2 {
 									margin-top: 2%;
 									li {
-										font-size: 1.1rem; font-weight: 500; width: 100%; margin: 1% 0; color: #333;
+										font-size: 1.1rem; font-weight: 600; width: 100%; margin: 1% 0; color: #333;
 										line-height: 1.4;
 									}
 								}
@@ -103,7 +103,7 @@ main {
 								#depth_2 {
 									margin-top: 2%;
 									li {
-										font-size: 1.1rem; font-weight: 500; width: 100%; margin: 1% 0; color: #333;
+										font-size: 1.1rem; font-weight: 600; width: 100%; margin: 1% 0; color: #333;
 										line-height: 1.4;
 									}
 								}
@@ -112,7 +112,7 @@ main {
 								width: 100%;
 								span {font-size: 1.5rem; font-weight: 900; width: 100%;}
 								#depth_2 {
-									width: 100%; display: flex; gap: 5px;
+									width: 100%; display: flex; gap: 5px; margin-top: 3%;
 									li {
 										width: 8%; height: 8%;
 										img {width: 100%;}
@@ -127,7 +127,7 @@ main {
 		#works {
 			background: #fff;
 			.inner {
-				width: 90%; height: calc(100% - 56px); padding-top: 16px; margin: 0 auto;
+				width: 90%; height: calc(100% - 56px); padding-top: 2%; margin: 0 auto;
 				.list {
 					display: flex; gap: 40px; flex-wrap: wrap;
 					.item {
@@ -163,7 +163,7 @@ main {
 						content: ""; width: 100%; height: 1px; background: #999;
 						position: absolute; left: 0; top: -1.5%;
 					}
-					span {font-size: 3rem; font-weight: 500;}
+					span {font-size: 3rem; font-weight: 600;}
 				}
 			}			
 		}
@@ -179,7 +179,7 @@ main {
 					position: absolute; right: 7%; bottom: 12.2%;
 				}
 				h2 {
-					font-size: 3rem; font-weight: 500;
+					font-size: 3rem; font-weight: 600;
 					&::before {
 						content: ""; width: 20%; height: 1px; background: #999;
 						position: absolute; left: 0%; top: 12%;
@@ -196,13 +196,15 @@ main {
 					#comment {
 						p {
 							margin: 6% 0; line-height: 1.2; font-weight: 400;
-							span {font-weight: 700;}
 						}
 						p:first-child {
-							font-size: 2rem;
+							font-size: 2.2rem; font-family: 'Pretendard-Bold';
+							span {color: #0078ff;} font-weight: 700;
 						}
-						p:last-child {font-size: 1.2rem; color: #666;}
-						img {width: 4%; vertical-align: -5px;}	
+						p:last-child {
+							font-size: 1.2rem; color: #666; font-weight: 600;
+							img {width: 4%; vertical-align: -5px;}	
+						}						
 					}
 					#bonus_photo {
 						img {width: 60%;}
